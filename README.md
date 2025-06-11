@@ -13,9 +13,38 @@ ___
 
   ___
 
-  ## Fitur Unggulan Aplikasi
+ ## Fitur Unggulan Aplikasi
 
   ### 1. Auto Match System
    Sistem pencocokan otomatis antara pemilik limbah dan mitra pengrajin terdekat.     Pencocokan dilakukan berdasarkan lokasi, kapasitas kebutuhan dan jenis limbah.
+  ### 2. Eco Marketplace
+   Marketplace internal untuk menjual dan membeli produk hasil daur ulang batok kelapa seperti arang, kerjainan, furniture mini, dll.
+  ### 3. Edukasi Daur Ulang
+  Fitur yang berisi artikel, video, dan tips mengolah limbah batok kelapa secara mandiri.
+  ### 4. Impact Tracker
+  Menampilkan statistik kontribusi pengguna, seperti:
+  - Jumlah limbah yang didaur ulang.
+  - Total transaksi produk daur ulang.
+  - Estimasi pengurangan emisi karbon.
+  ### 5. CRUD Data Limbah & Produk
+  Pengguna dapat menambhakan, memperbarui, dan menghapus data limbah maupun produk yang ingin mereka jual.
+  ### 6. Manajemen Mitra & User
+  Admin dapat mengelola mitra pengrajin, pengguna umum, serta data aktivas yang terjadi di dalam aplikasi.
+
+  ## Target Pengguna
+  - Pemilik limbah batok kelapa (rumah tangga, petani, industri kelapa & masyarakat)
+  - Aktivis lingkungan dan komunitas daur ulang
+  - Masyarakat umum yang peduli terhadp pengelolaan sampah organik.
+
+___
+
+## Teknologi & Tools
+
+| Teknologi         | Deskripsi                          |
+|------------------|------------------------------------|
+| Flutter / Kotlin | Framework pengembangan aplikasi    |
+| Firebase / SQLite| Backend dan database                |
+| GitHub           | Version control & dokumentasi      |
+| Figma            | Desain UI/UX                       |
   
 
