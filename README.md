@@ -20,7 +20,7 @@ ___
   ### 2. Eco Marketplace
    Marketplace internal untuk menjual dan membeli produk hasil daur ulang batok kelapa seperti arang, kerjainan, furniture mini, dll.
   ### 3. Edukasi Daur Ulang
-  Fitur yang berisi artikel, video, dan tips mengolah limbah batok kelapa secara mandiri.
+  Fitur yang berisi artikel dan tips mengolah limbah batok kelapa secara mandiri.
   ### 4. Impact Tracker
   Menampilkan statistik kontribusi pengguna, seperti:
   - Jumlah limbah yang didaur ulang.
