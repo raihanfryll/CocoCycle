@@ -11,7 +11,7 @@ ___
 - Memberikan edukasi kepada masyarakat mengenai potensi ekonomi limbah batok kelapa.
 - Mendorong ekonomi sirkular melalui aplikasi teknologi mobile.
 
-  ___
+___
 
  ## Fitur Unggulan Aplikasi
 
