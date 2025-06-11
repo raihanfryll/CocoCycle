@@ -46,5 +46,11 @@ ___
 | Firebase / SQLite| Backend dan database                |
 | GitHub           | Version control & dokumentasi      |
 | Figma            | Desain UI/UX                       |
+
+___
+
+## Anggota Kelompok5:
+- Berliani Utami (2208107010082)
+- Raihan Firyal (2208107010084)
   
 
