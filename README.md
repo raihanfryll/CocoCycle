@@ -27,7 +27,7 @@ ___
   - Total transaksi produk daur ulang.
   - Estimasi pengurangan emisi karbon.
   ### 5. CRUD Data Limbah & Produk
-  Pengguna dapat menambhakan, memperbarui, dan menghapus data limbah maupun produk yang ingin mereka jual.
+  Pengguna dapat menambahakan dan memperbarui data limbah maupun produk yang ingin mereka jual.
   ### 6. Manajemen Mitra & User
   Admin dapat mengelola mitra pengrajin, pengguna umum, serta data aktivas yang terjadi di dalam aplikasi.
 
