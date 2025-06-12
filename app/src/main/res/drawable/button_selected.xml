@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#A0522D" /> <!-- Warna berbeda untuk selected -->
+    <corners android:radius="12dp" />
+</shape>

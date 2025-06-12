@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4A34">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical">
+
+            <!-- Kiri: Tombol Back -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/backleft"
+                android:tint="#6F4E37"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tengah: Judul -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Edit Batok Kelapa"
+                android:textColor="#6F4E37"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Konten Form -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="?android:attr/dividerVertical"
+                android:showDividers="middle">
+
+                <!-- Jenis Batok Kelapa -->
+                <TextView
+                    android:text="Jenis Batok Kelapa"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/button_jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Batok utuh"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="false" />
+
+
+                <!-- Jumlah & Satuan -->
+                <TextView
+                    android:text="Jumlah"
+                    android:layout_weight="1"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/input_jumlah"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="25"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"
+                        android:drawableEnd="@drawable/dropdown"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:gravity="center_vertical|start"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <!-- Kondisi -->
+                <TextView
+                    android:text="Kondisi"
+                    android:layout_weight="1"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:id="@+id/radio_group_kondisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_bersih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bersih"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/radio_kotor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perlu Dibersihkan"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="16dp" />
+                </RadioGroup>
+
+                <!-- Lokasi -->
+                <TextView
+                    android:text="Lokasi Penyimpanan"
+                    android:layout_weight="1"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/spinner_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Pabrik Eco Craft"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="false" />
+
+                <!-- Tanggal -->
+                <TextView
+                    android:text="Tanggal Pendaftaran"
+                    android:layout_weight="1"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/input_tanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="17 - 07 - 2025"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="false" />
+
+                <!-- Pengrajin -->
+                <TextView
+                    android:text="Pengrajin/Pabrik"
+                    android:layout_weight="1"
+                    android:minHeight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Tombol Hapus -->
+                <Button
+                    android:id="@+id/spinner_pengrajin"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Eco Craft Indonesia"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnKonfirmasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#6F4E37"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/proicons_home"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/proicons_chat"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/keranjang"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ei_user"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

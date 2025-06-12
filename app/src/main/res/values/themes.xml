@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.CocoCycle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Ubah warna tema utama menjadi coklat -->
+        <item name="colorPrimary">#6B4226</item>
+        <item name="colorPrimaryVariant">#5A3520</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Nonaktifkan efek highlight ungu saat tombol ditekan -->
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="android:colorButtonNormal">@android:color/transparent</item>
+
+        <!-- Warna latar belakang dan teks -->
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#6B4226</item>
+
+        <!-- Konfigurasi lainnya -->
+        <item name="android:statusBarColor" tools:targetApi="l">#6B4226</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">#6B4226</item>
+    </style>
+</resources>

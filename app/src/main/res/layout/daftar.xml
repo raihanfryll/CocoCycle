@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4A34">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CocoCycle"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:fontFamily="@font/berkshireswash_regular"
+            android:layout_marginTop="16dp" />
+
+        <!-- White Container -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/coconut_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_top_white"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR"
+                android:layout_marginBottom="28dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/calsansregular"
+                android:textColor="#6B4226"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/orang"
+                    android:tint="#FFFFFF"
+                    android:layout_marginEnd="12dp" />
+
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/calsansregular"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#EEDDDD" />
+            </LinearLayout>
+
+            <!-- Username -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ie_email"
+                    android:tint="#FFFFFF"
+                    android:layout_marginEnd="12dp" />
+
+
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/calsansregular"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#EEDDDD" />
+            </LinearLayout>
+
+            <!-- Password -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_background"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/kunci"
+                    android:tint="#FFFFFF"
+                    android:layout_marginEnd="12dp" />
+
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/calsansregular"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#EEDDDD" />
+            </LinearLayout>
+
+            <!-- Tombol Daftar -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR →"
+                android:fontFamily="@font/calsansregular"
+                android:textStyle="bold"
+                android:textColor="#6B4226"
+                android:background="@drawable/button_background_white"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+        <!-- Link ke halaman login -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun?"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="#DDAA66"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

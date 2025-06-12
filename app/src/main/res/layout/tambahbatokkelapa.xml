@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4A34">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/backleft"
+            android:tint="#6F4E37"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tambah Batok Kelapa"
+            android:textColor="#6F4E37"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- ScrollView Konten -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/konfirmasi_button"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Tambah Batok Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Batok Kelapa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Upload Foto -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/bingkai"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/upload_container"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/camera"
+                    android:background="@drawable/elips"
+                    android:padding="16dp"
+                    android:contentDescription="Upload Foto" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unggah foto batok kelapa Anda"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Detail Batok -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Batok"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Berat -->
+            <TextView
+                android:id="@+id/berat_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah/Berat"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/berat_edit_input"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:background="@drawable/input"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:hint="0" />
+
+                <!-- Tombol naik turun -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/button_tambah"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Tambah"
+                        android:src="@drawable/ic_arrow_up"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/button_kurangi"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Kurangi"
+                        android:src="@drawable/ic_arrow_down"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:text="KG"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Kondisi Batok -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kondisi Batok"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3"
+                android:layout_marginBottom="24dp">
+
+                <!-- Bersih -->
+                <LinearLayout
+                    android:id="@+id/kondisi_bersih"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/kondisi"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/clean" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bersih"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="18dp" />
+                </LinearLayout>
+
+                <!-- Kotor -->
+                <LinearLayout
+                    android:id="@+id/kondisi_kotor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/kondisi"
+                    android:layout_marginEnd="5dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/kotor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kotor"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="18dp" />
+                </LinearLayout>
+
+                <!-- Diproses -->
+                <LinearLayout
+                    android:id="@+id/kondisi_diproses"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/kondisi"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/diproses" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diproses"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Konfirmasi Button -->
+    <Button
+        android:id="@+id/konfirmasi_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Penambahan"
+        android:backgroundTint="#C5A78B"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/proicons_home"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/proicons_chat"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/keranjang"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ei_user"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>
